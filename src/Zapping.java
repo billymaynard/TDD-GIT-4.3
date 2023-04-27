@@ -8,8 +8,8 @@ public class Zapping {
         if (canalactual==canaldestino || canalactual == 0 || canaldestino == 0 || canalactual>numberofchannels || canaldestino>numberofchannels){
             return 0;
         }else {
-
+            return canaldestino-canalactual;
         }
-        return 0;
+
     }
 }
