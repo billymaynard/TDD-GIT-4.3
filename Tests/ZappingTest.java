@@ -31,5 +31,30 @@ class ZappingTest {
         //Assert
         assertEquals(1,respuesta);
     }
+    @Test
+    @DisplayName("Test canal origen: 10 canal destino 30: Salida: 20")
+    public void test3(){
+        //Assemble
+        Zapping newZap = new Zapping(99);
+        int respuesta;
 
+        //Act
+        respuesta = newZap.ClicksHasta(10,30);
+
+        //Assert
+        assertEquals(20,respuesta);
+    }
+    @Test
+    @DisplayName("Test canal origen: 2 canal destino 99: Salida: 2")
+    public void test4(){
+        //Assemble
+        Zapping newZap = new Zapping(99);
+        int respuesta;
+
+        //Act
+        respuesta = newZap.ClicksHasta(2,99);
+
+        //Assert
+        assertEquals(2,respuesta);
+    }
 }
